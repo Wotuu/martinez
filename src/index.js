@@ -148,7 +148,7 @@ function possibleIntersection(se1, se2, queue) {
   // that disallows self-intersecting polygons,
   // did cost us half a day, so I'll leave it
   // out of respect
-  // if (se1.isSubject === se2.isSubject) return;
+  if (se1.isSubject === se2.isSubject) return;
 
   var inter = intersection(
     se1.point, se1.otherEvent.point,
